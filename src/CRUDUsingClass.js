@@ -42,13 +42,8 @@ class CRUDUsingClass extends React.Component {
         });
     }
 
-    handleUpdate(id) {
-        let myarray = [...this.state.myarray];
-        let updatedList = myarray.find(item => item.id === id);
-        this.setState({
-            mytext: updatedList.value,
-        });
-    }
+
+
 
     editTask = (id) => {
         const text = prompt("Task Name");
